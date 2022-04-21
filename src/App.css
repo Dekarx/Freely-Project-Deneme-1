@@ -4,6 +4,7 @@
   --primary-white : #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
+  --primary-light-blue : #8ba5bc;
 }
 
 body {
@@ -158,5 +159,36 @@ nav ul li {
 .btn-main-offer:hover:before {
   left: 100%;
   text-decoration: none;
+}
+
+
+/******************** ABOUT Us **********************/
+
+.aboutUsContainer {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-light-blue);
+}
+
+.aboutUs-heading {
+  color: var(--primary-light-blue);
+  text-transform: uppercase;
+}
+
+@media(max-width:468) { /* Telefon ekranlarındaki responsive yapı için */
+  .profile-img {
+    width: 10rem;
+  }
 }
 
