@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
-  --primary-white : #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
   --primary-light-blue : #8ba5bc;
   --primary-light-grey:  #f4f4f4;
-  --primary-dark-hard: rgb(52, 58, 60);;
+  --primary-dark-hard: rgb(52, 58, 60);
+  --primary-white : #ffffff;
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-grey:  #ccd1d9;
+  --primary-dark-grey:  #666666;
 }
 
 body {
@@ -274,6 +278,98 @@ nav ul li {
 
 .services .box:hover h3 {
   font-size: 2rem;
+}
+
+
+/******************** EXPERİENCE **********************/
+
+.experience {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 0.7rem;
+}
+
+.experience-wrapper { /* Uzun Çubuk */
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden; /* uzun ince çubuk koyar */
+}
+
+.experience h1 {
+  text-transform: uppercase;
+  color: var(--primary-light-blue);
+  font-weight: 900;
+}
+
+.experience-wrapper::before { /* Uzun Çubuk */
+  position: absolute; /* container ile bağlı bir şekilde hareket etmesi için absolute dedik */
+  content: "";
+  top: 0; /* div in en başından başlaması için */
+  left: 50%; /* çubuğu ortalamak için */
+  margin-left: -0.0625rem; /* çubuğu tam ortalamak için biraz sağdan sola çektik */
+  width: 0.125rem; /* çubuğun kalınlığını ayarladık */
+  height: 100%; /* tüm div de devam etmesi için dedik */
+  background: var(--primary-grey);
+  z-index : 1; /* blok topunun altında kalması için verdik */
+}
+
+.timeline-block { /* tarihlerin de içinde olduğu tüm div */
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.3125rem solid var(--primary-light-blue);
+  background: var(--primary-white);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--primary-dark-grey);
+  direction: ltr;
+}
+
+.timeline-content h3 {
+  margin-top: 0.3125rem;
+  color: var(--primary-light-blue);
+  font-weight: 900;
+}
+
+/******************** MEDİA EXPERİENCE **********************/
+
+@media(max-width:768px) { /* Telefon ekranlarındaki responsive yapı için */
+  .experience .container {
+    padding-left: 0;
+  }
+  .experience-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .timeline-block-right {
+    float: none;
+    width: 100%;
+  }
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+    width: 100%;
+  }
 }
 
 

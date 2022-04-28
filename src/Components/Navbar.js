@@ -2,9 +2,7 @@ import React from "react"
 import logo from "../logo.png"
 
 // React Fontawesome Imports
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import { FaBars } from 'react-icons/fa';
 function Navbar() {
   return (
     <>
@@ -25,7 +23,7 @@ function Navbar() {
 
                 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <FontAwesomeIcon icon={faBars} style={{ color:"#fff" }} />
+                <FaBars style={{ color:"#fff" }} />
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,10 +40,13 @@ function Navbar() {
                             <a className="nav-link" href="#">Services</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">How Work</a>
+                            <a className="nav-link" href="#">Experience</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Flow</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Contact Us</a>
