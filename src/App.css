@@ -58,11 +58,6 @@ nav ul li {
   height: 6rem !important;   /* navbarın yüksekliğini ayarlıyor */
 }
 
-@media(max-width:768px) {
-  .navbar-brand {
-    width: 7rem;
-  }
-}
 
 .navbar-nav > li > a.active , .navbar-nav > li > a.active:focus {
   border-top : 0.1875rem solid var(--primary-white);
@@ -71,6 +66,73 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-top : 0.1875rem solid var(--primary-white);
 }
+
+@media(max-width:768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+/**** Sign In Button ****/
+.btnSignIn {
+  appearance: button;
+  background-color: #228cbe;
+  border: solid transparent;
+  border-radius: 1rem;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 0.6rem 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.btnSignIn:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 1rem;
+  border-width: 0 0 0.3rem;
+  bottom: -0.3rem;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btnSignIn:main,
+.btnSignIn:focus {
+  user-select: auto;
+}
+
+.btnSignIn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.btnSignIn:disabled {
+  cursor: auto;
+}
+
+
 
 /******************** HEADER **********************/
 
@@ -372,5 +434,75 @@ nav ul li {
   }
 }
 
+/*------------ OUR TEAM > TESTİMONİALS ------------------*/
+
+.testimonials {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: url(testimonials-bg.jpg);
+  /* background: #A2B8C6; */
+  background-size: cover;
+  /* background-color: var(--primary-black); */
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.testimonials h1 {
+  color: var(--primary-white);
+  padding: 3rem 0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.testimonials-content {
+  text-align: center;
+  max-width: 53.125rem;
+  margin: -2rem auto 2rem auto;
+  background: var(--primary-transparent-black);
+}
+
+.myCarousel {
+  color: var(--primary-white);
+  background: transparent;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17.875rem;
+}
+
+.myCarousel h3 {
+  color: var(--primary-white);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.myCarousel p {
+  margin-top: 1rem;
+  color: var(--primary-white);
+}
+
+.carousel .slide {
+  background: transparent !important;
+  height: 100% !important;
+  padding-top: 2rem ;
+}
+
+
+.carousel .slide img {
+  width: 12rem !important;
+  border-radius: 50%;
+  padding-bottom: 2rem;
+}
+
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
 
 

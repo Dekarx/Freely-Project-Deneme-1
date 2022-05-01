@@ -6,7 +6,7 @@ import Header from './Components/Header';
 import AboutUs from './Components/AboutUs';
 import Services from './Components/Services';
 import Experience from './Components/Experience';
-
+import Team from './Components/Team/Team';
 
 
 
@@ -19,7 +19,7 @@ function App() {
      <AboutUs />
      <Services />
      <Experience />
-    
+     <Team />
     
     </>
   );

@@ -40,16 +40,16 @@ function Navbar() {
                             <a className="nav-link" href="#">Services</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Experience</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Portfolio</a>
+                            <a className="nav-link" href="#">Our Team</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Flow</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li className="nav-item">
+                            <button role="button" class="btnSignIn">Sign In</button>
                         </li>
                     
                     </ul>
